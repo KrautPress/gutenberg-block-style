@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-	mode: 'development',
+	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 	entry: ['./blocks/index.js', './blocks/editor.scss', './blocks/frontend.scss'],
 	output: {
 		path: path.resolve(__dirname, 'assets'),

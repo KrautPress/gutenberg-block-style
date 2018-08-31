@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack",
-    "build:production": "webpack --config webpack.config.production.js",
+    "build:production": "NODE_ENV=production webpack",
     "watch": "webpack --watch"
   },
   "repository": {
