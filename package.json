@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/KrautPress/gutenberg-block-style-variation/issues"
   },
+  "browserslist": [
+	"extends @wordpress/browserslist-config"
+  ],
   "homepage": "https://github.com/KrautPress/gutenberg-block-style-variation#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
