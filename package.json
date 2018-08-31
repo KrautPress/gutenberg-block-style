@@ -2,7 +2,6 @@
   "name": "krautpress-gutenberg-block-style-variation",
   "version": "0.1.0",
   "description": "A plugin that adds a block style variation to the list block.",
-  "main": "index.js",
   "scripts": {
     "build:dev": "webpack",
     "build:production": "cross-env NODE_ENV=production webpack",
