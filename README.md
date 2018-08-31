@@ -1,7 +1,7 @@
 # KrautPress Gutenberg block style variation 
 **Contributors:** FlorianBrinkmann  
-**Requires at least:** 4.9.9  
-**Tested up to:** 4.9.9  
+**Requires at least:** 4.9.8  
+**Tested up to:** 4.9.8  
 **Stable tag:** 0.1.0  
 **Requires PHP:** 5.4  
 
