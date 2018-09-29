@@ -25,7 +25,7 @@ add_action( 'enqueue_block_editor_assets', function() {
 	wp_enqueue_script(
 		'krautpress-gutenberg-block-style-variation-editor-script',
 		plugins_url( 'assets/js/editor.blocks.js', __FILE__ ),
-		[ 'wp-blocks', 'wp-element' ]
+		[ 'wp-blocks', 'wp-element', 'wp-edit-post', 'lodash' ] ]
 	);
 
 	wp_enqueue_style(

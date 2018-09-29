@@ -3,6 +3,9 @@ const path = require('path');
 module.exports = {
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 	entry: ['./blocks/index.js', './blocks/editor.scss', './blocks/frontend.scss'],
+	externals: {
+		lodash: 'lodash'
+	},
 	output: {
 		path: path.resolve(__dirname, 'assets'),
 		filename: 'js/editor.blocks.js',
