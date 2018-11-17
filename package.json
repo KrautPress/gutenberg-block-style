@@ -1,7 +1,7 @@
 {
-  "name": "krautpress-gutenberg-block-style-variation",
+  "name": "krautpress-gutenberg-block-style",
   "version": "0.1.0",
-  "description": "A plugin that adds a block style variation to the list block.",
+  "description": "A plugin that adds a block style to the list block.",
   "scripts": {
     "build:dev": "webpack",
     "build:production": "cross-env NODE_ENV=production webpack",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KrautPress/gutenberg-block-style-variation.git"
+    "url": "git+https://github.com/KrautPress/gutenberg-block-style.git"
   },
   "keywords": [
     "wordpress-plugin"
@@ -17,12 +17,12 @@
   "author": "Florian Brinkmann",
   "license": "GPL-2.0+",
   "bugs": {
-    "url": "https://github.com/KrautPress/gutenberg-block-style-variation/issues"
+    "url": "https://github.com/KrautPress/gutenberg-block-style/issues"
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
   ],
-  "homepage": "https://github.com/KrautPress/gutenberg-block-style-variation#readme",
+  "homepage": "https://github.com/KrautPress/gutenberg-block-style#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@wordpress/babel-preset-default": "^2.1.0",
