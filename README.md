@@ -1,5 +1,5 @@
-# KrautPress Gutenberg block style variation 
-**Contributors:** FlorianBrinkmann  
+# KrautPress Gutenberg block style 
+**Contributors:** Florian Brinkmann  
 **Requires at least:** 4.9.8  
 **Tested up to:** 4.9.8  
 **Stable tag:** 0.1.0  
@@ -8,7 +8,7 @@
 
 ## Description 
 
-A small plugin that adds a block style variation for large text to the list block.
+A small plugin that adds a block style for large text to the list block.
 
 ## Installation 
 
@@ -17,6 +17,6 @@ A small plugin that adds a block style variation for large text to the list bloc
 
 ## Changelog 
 
-### 0.1.0 – 30.08.2018
+### 0.1.0 – 17.11.2018
 
 * Initial release
