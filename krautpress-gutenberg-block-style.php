@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin for block style variation as example block for KrautPress article.
+ * Plugin for custom list block style as example for KrautPress article.
  *
  * @license GPL-2.0+
- * @package krautpress/block-style-variation
+ * @package krautpress/block-style
  *
  * @wordpress-plugin
- * Plugin Name: KrautPress block style variation
- * Description: A plugin that adds a block style variation to the list block.
+ * Plugin Name: KrautPress block style
+ * Description: A plugin that adds a block style to the list block.
  * Version:     0.1.0
  * Author:      Florian Brinkmann
  * Author URI:  https://florianbrinkmann.com/en/
@@ -23,13 +23,13 @@ if ( ! defined( 'WPINC' ) ) {
  */
 add_action( 'enqueue_block_editor_assets', function() {
 	wp_enqueue_script(
-		'krautpress-gutenberg-block-style-variation-editor-script',
+		'krautpress-gutenberg-block-style-editor-script',
 		plugins_url( 'assets/js/editor.blocks.js', __FILE__ ),
 		[ 'wp-blocks', 'wp-element', 'wp-edit-post', 'lodash' ]
 	);
 
 	wp_enqueue_style(
-		'krautpress-gutenberg-block-style-variation-editor-style',
+		'krautpress-gutenberg-block-style-editor-style',
 		plugins_url( 'assets/css/editor.blocks.css', __FILE__ )
 	);
 } );
@@ -39,7 +39,7 @@ add_action( 'enqueue_block_editor_assets', function() {
  */
 add_action( 'enqueue_block_assets', function() {
 	wp_enqueue_style(
-		'krautpress-gutenberg-block-style-variation-frontend-style',
+		'krautpress-gutenberg-block-style-frontend-style',
 		plugins_url( 'assets/css/frontend.blocks.css', __FILE__ )
 	);
 } );
