@@ -1,11 +1,9 @@
+const defaultConfig = require("./node_modules/@wordpress/scripts/config/webpack.config");
 const path = require('path');
 
 module.exports = {
-	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+	...defaultConfig,
 	entry: ['./blocks/index.js', './blocks/editor.scss', './blocks/frontend.scss'],
-	externals: {
-		lodash: 'lodash'
-	},
 	output: {
 		path: path.resolve(__dirname, 'assets'),
 		filename: 'js/editor.blocks.js',
@@ -15,13 +13,7 @@ module.exports = {
 			/**
 			 * Running Babel on JS files.
 			 */
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader',
-				}
-			},
+			...defaultConfig.module.rules,
 			{
 				test: /\.scss$/,
 				use: [
